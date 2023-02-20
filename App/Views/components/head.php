@@ -1,5 +1,5 @@
 <?php
-    $config = include("{$_SERVER['DOCUMENT_ROOT']}/afungaz/config.php");
+    $config = include("{$_SERVER['DOCUMENT_ROOT']}/csg/App/Controller/config/config.php");
     $uri = $_SERVER['REQUEST_URI'];
     date_default_timezone_set('America/Sao_Paulo');
 ?>
@@ -74,7 +74,7 @@
                         <li class="nav-item">
                             <a class="nav-link px-3 border-bottom <?= $uri === '/afungaz/user/read_agendamento.php' ? 'active' : '' ?>" href="<?= $config['URL'] ?>user/read_agendamento.php"><i class="bi bi-clock-fill me-2"></i>Meus Agendamentos</a>
                         </li>
-                        <?php if ($_SESSION['id_tipo_funcionario'] == 2) { ?>
+                        <?php if ($_SESSION['id_tipo_usuario'] == 3) { ?>
                             <li class="nav-item">
                                 <a class="nav-link px-3 border-bottom <?= $uri === '/afungaz/admin/read_agendamento.php' ? 'active' : '' ?>" href="<?= $config['URL'] ?>admin/read_agendamento.php"><i class="bi bi-journal-text me-2"></i>Relatório de Agendamentos</a>
                             </li>

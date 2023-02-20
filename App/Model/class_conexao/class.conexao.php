@@ -10,10 +10,10 @@ class conexao
 
     public function __construct()
     {
-        $this->host = 'afungaz.mysql.dbaas.com.br';
-        $this->database = 'afungaz';
-        $this->user = 'afungaz';
-        $this->password = 'Informatica@10';
+        $this->host = 'localhost';
+        $this->database = 'csg';
+        $this->user = 'root';
+        $this->password = '';
     }
     public function conecta()
     {
