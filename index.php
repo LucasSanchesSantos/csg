@@ -6,6 +6,9 @@ $obj = new validaLogin;
 session_start();
 $obj->checkLogin();
 
+if (isset($_GET['logout'])) {
+    $obj->logout();
+}
 
 include 'App/Views/components/head.php';
 

@@ -2,10 +2,10 @@
 
 <footer class="footer mt-2">
     <div class="copyright text-center my-auto text-muted">
-            <span>Copyright &copy; Afungaz <?= date('Y') ?></span>
+            <span>Copyright &copy; CSG <?= date('Y') ?></span>
         </div>
     <div class="text-center text-muted">
-        Desenvolvido por SK Sistemas
+        Desenvolvido por LS Sistemas
     </div>
 </footer>
 

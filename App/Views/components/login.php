@@ -42,7 +42,7 @@
 			
 				<div class="wrap-input100 validate-input" >
 					<input class="input100" type="text"  required="" name="usuario">
-					<span class="focus-input100"></span>
+					<span class="focus-input100" data-placeholder="Login"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate="Enter password">
