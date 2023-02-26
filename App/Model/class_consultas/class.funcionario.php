@@ -12,9 +12,10 @@ class funcionarios
     {
         $sql = 
         "SELECT s.* 
-            ,t.descricao
+            ,CONCAT('(',s.ddd,') ','9 ',left(right(s.telefone,8),4),'-',right(s.telefone,4)) as full_telefone
+            ,c.descricao as contato_padrao
         FROM suporte_team s 
-        left join tipo_usuario t on t.id = s.id_contato_padrao
+        left join contato_padrao c on c.id = s.id_contato_padrao
         ";
         $stmt = $this->bd->conecta()->prepare($sql);
         $stmt->execute();

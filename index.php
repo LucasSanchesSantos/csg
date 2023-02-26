@@ -11,8 +11,9 @@ if (isset($_GET['logout'])) {
 }
 
 include 'App/Views/components/head.php';
-include 'App/Views/components/home.php';
+include 'App/Controller/home/home_format.php';
 include 'App/Views/components/footer.php';
+
 
 
 ?>
