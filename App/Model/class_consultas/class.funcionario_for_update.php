@@ -1,6 +1,6 @@
 <?php
 
-class funcionarios
+class consulta_funcionario_for_update
 {   
     private $bd;
     public function __construct(){
@@ -8,7 +8,7 @@ class funcionarios
         $this->bd = new conexao();
     }
 
-    public function extract_funcionarios()
+    public function consulta_funcionario_for_update()
     {
         $sql = 
         "SELECT u.* 

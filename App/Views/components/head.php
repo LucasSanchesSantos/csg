@@ -62,7 +62,7 @@
                     <ul class="navbar-nav justify-content-end flex-grow-1">
                         <?php if ($_SESSION['id_tipo_usuario'] == 3) { ?>
                             <li class="nav-item">
-                                <a class="nav-link px-3 border-bottom <?= $uri === '/csg/App/Controller/user/create.php' ? 'active' : '' ?>" href="<?= $config['URL'] ?>/App/Controller/user/create.php"><i class="bi bi-journal-text me-2"></i>Novo cadastro</a>
+                                <a class="nav-link px-3 border-bottom <?= $uri === '/csg/App/Controller/user/view.php' ? 'active' : '' ?>" href="<?= $config['URL'] ?>/App/Controller/user/view.php"><i class="bi bi-journal-text me-2"></i>Novo cadastro</a>
                             </li>
                        
                         <?php } ?>

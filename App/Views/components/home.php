@@ -1,11 +1,12 @@
-<?php 
-    echo '<div class="h2 text-center mb-3 fw-bold">Assessoria do varejo</div>';
 
+<div class="h2 text-center mb-3 fw-bold">Assessoria do varejo</div>
+
+<?php 
 foreach($_SESSION['array'] as $key => $row){
     echo '<div class="card mb-3" style="max-width: 540px;">';
     echo    '<div class="row g-0">';
     echo        '<div class="col-md-4">';
-    echo            '<img src="App/Views/images/funcionarios/'.$row['foto'].'" class="img-fluid rounded-start">';
+    echo            '<img src="App/Views/images/funcionarios/'.$row['foto'].'" class="img-fluid">';
     echo        '</div>';
     echo        '<div class="col-md-8">';
     echo            '<div class="card-body">';
@@ -19,3 +20,4 @@ foreach($_SESSION['array'] as $key => $row){
     echo    '</div>';
     echo '</div>';
 }
+

@@ -11,10 +11,8 @@ class login
     public function sigin($usuario,$senha)
     {
         $sql = 
-        "SELECT u.id_usuario_sabium
-            ,u.id_tipo_usuario
+        "SELECT u.*
             ,t.descricao as tipo_usuario
-            ,us.* 
         FROM usuario_csg u 
         left join usuario us on us.idusuario = u.id_usuario_sabium
         left join tipo_usuario t on t.id = u.id_tipo_usuario

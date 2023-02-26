@@ -7,7 +7,6 @@ if($_SESSION['id_tipo_usuario'] <> 3){
 
 include '../../Model/class_consultas/class.valida.funcionario.existe.php';
 include '../../Model/class_consultas/class.funcionario.php';
-
 include '../../Model/class_create/class.create_funcionario.php';
 
 
